@@ -10,7 +10,8 @@
         html { scroll-behavior: smooth; }
         .accordion-content { display: none; }
         .accordion-active .accordion-content { display: block; }
-        .hero-bg { background: linear-gradient(rgba(10,37,64,0.85), rgba(30,58,138,0.85)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d') center/cover no-repeat; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
@@ -32,8 +33,8 @@
     </nav>
 
     <!-- Hero -->
-    <header class="hero-bg text-white py-32 text-center">
-        <img src="https://imgur.com/FTPqfBS" alt="GNAB Logo" class="mx-auto h-40 mb-8">
+    <header class="bg-gradient-to-br from-[#0A2540] to-[#1E3A8A] text-white py-28 text-center">
+        <img src="https://imgur.com/FTPqfBS" alt="GNAB Logo" class="mx-auto h-40 mb-6">
         <h1 class="text-6xl font-bold mb-4">GNAB Business Solutions</h1>
         <p class="text-3xl">Your Trusted Procurement & Supply Partner Across Ghana</p>
     </header>
@@ -42,27 +43,24 @@
 
         <!-- About Us -->
         <section id="about" class="mb-20">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
-                        <span>About Us</span>
-                        <i class="fas fa-chevron-down ml-auto"></i>
-                    </h2>
-                    <div class="accordion-content pl-4 border-l-4 border-green-600 space-y-6 text-lg">
-                        <p>GNAB Business Solutions is a Ghanaian procurement and supply company committed to helping businesses, institutions, and organizations simplify their purchasing processes through reliable sourcing, competitive pricing, and timely delivery.</p>
-                        <p>We serve as a one-stop procurement partner for corporate organizations, educational institutions, healthcare facilities, hospitality businesses, NGOs, government agencies, and SMEs.</p>
-                        
-                        <div class="mt-8">
-                            <h3 class="font-semibold text-xl mb-3">Our Vision</h3>
-                            <p>To become one of Ghana's most trusted and preferred procurement and supply partners, recognized for reliability, professionalism, innovation, and customer satisfaction.</p>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-xl mb-3">Our Mission</h3>
-                            <p>To provide efficient procurement and supply solutions that enable our clients to focus on their core business while we handle their sourcing, purchasing, and delivery needs with excellence.</p>
-                        </div>
+            <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                <span>About Us</span>
+                <i class="fas fa-chevron-down ml-auto"></i>
+            </h2>
+            <div class="accordion-content pl-4 border-l-4 border-green-600 space-y-6 text-lg">
+                <p>GNAB Business Solutions is a Ghanaian procurement and supply company committed to helping businesses, institutions, and organizations simplify their purchasing processes through reliable sourcing, competitive pricing, and timely delivery.</p>
+                <p>We serve as a one-stop procurement partner, supplying a broad range of products tailored to corporate organizations, educational institutions, healthcare facilities, hospitality businesses, NGOs, government agencies, and SMEs.</p>
+                
+                <div class="mt-8 grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-semibold text-xl mb-3">Our Vision</h3>
+                        <p>To become one of Ghana's most trusted and preferred procurement and supply partners, recognized for reliability, professionalism, innovation, and customer satisfaction.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-xl mb-3">Our Mission</h3>
+                        <p>To provide efficient procurement and supply solutions that enable our clients to focus on their core business while we handle their sourcing, purchasing, and delivery needs with excellence.</p>
                     </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Team Collaboration" class="rounded-3xl shadow-2xl">
             </div>
         </section>
 
@@ -92,12 +90,12 @@
             </h2>
             <div class="accordion-content pl-4 space-y-8 text-lg">
                 <div><strong>Office Stationery & Consumables:</strong> Printing paper, pens and pencils, files and folders, diaries and notebooks, toners and ink cartridges, office supplies.</div>
-                <div><strong>Information Technology (IT) Supplies:</strong> Laptops and desktop computers, printers and scanners, networking equipment, computer accessories, UPS systems, external storage devices.</div>
+                <div><strong>IT Supplies:</strong> Laptops and desktop computers, printers and scanners, networking equipment, computer accessories, UPS systems, external storage devices.</div>
                 <div><strong>Cleaning & Janitorial Supplies:</strong> Cleaning chemicals, tissue products, waste bins, mops and buckets, cleaning equipment, disposable supplies.</div>
                 <div><strong>Personal Protective Equipment (PPE):</strong> Safety helmets, reflective jackets, safety boots, protective gloves, face masks, safety goggles.</div>
                 <div><strong>Office Furniture:</strong> Executive desks, office chairs, cabinets, shelving systems, conference tables, reception furniture.</div>
                 <div><strong>Printing & Branding:</strong> Business cards, letterheads, company profiles, banners, promotional materials, corporate gifts.</div>
-                <div><strong>General Procurement:</strong> We also source products outside our regular catalogue. <strong>If you need it, we'll source it.</strong></div>
+                <div><strong>General Procurement:</strong> We source any product you need outside our regular catalogue. <strong>If you need it, we'll source it.</strong></div>
             </div>
         </section>
 
@@ -108,7 +106,7 @@
                     <span>Industries We Serve</span>
                     <i class="fas fa-chevron-down ml-auto"></i>
                 </h2>
-                <div class="accordion-content pl-4 grid gap-2 text-lg">
+                <div class="accordion-content pl-4 space-y-2 text-lg">
                     <div>Corporate Organisations • Government Institutions • Educational Institutions</div>
                     <div>Healthcare Facilities • Construction Companies • Hotels & Hospitality</div>
                     <div>NGOs & Development Partners • Financial Institutions • Manufacturing Companies</div>
