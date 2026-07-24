@@ -3,133 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNAB Business Solutions | Procurement & Supply Ghana</title>
+    <title>GNAB Business Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        html { scroll-behavior: smooth; }
-        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-12px); }
-        .nav-link { transition: all 0.3s; }
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .hero-bg { 
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1586528116311-2e2c3d4e3b2c') center/cover no-repeat; 
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<body class="bg-zinc-950 text-white">
 
-    <!-- Navigation -->
-    <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="https://i.imgur.com/YOUR-LOGO-LINK.png" alt="GNAB Logo" class="h-12">
-                <span class="font-bold text-2xl text-[#0A2540] dark:text-white">GNAB</span>
-            </div>
-            
-            <div class="hidden md:flex gap-8 text-lg">
-                <a href="#about" class="nav-link font-medium hover:text-green-600">About</a>
-                <a href="#services" class="nav-link font-medium hover:text-green-600">Services</a>
-                <a href="#why" class="nav-link font-medium hover:text-green-600">Why Us</a>
-                <a href="#testimonials" class="nav-link font-medium hover:text-green-600">Testimonials</a>
-                <a href="#contact" class="nav-link font-medium hover:text-green-600">Contact</a>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <button onclick="toggleDarkMode()" class="p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <i id="theme-icon" class="fas fa-moon text-xl"></i>
-                </button>
-                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">Get Quote</a>
-            </div>
+  <!-- Navigation -->
+  <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://imgur.com/FTPqfBS" alt="GNAB" class="h-10">
+        <div>
+          <span class="font-semibold text-xl tracking-tight">GNAB</span>
+          <p class="text-[10px] text-emerald-400 tracking-widest">ONE PARTNER. ENDLESS SOLUTIONS.</p>
         </div>
-    </nav>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#services" class="hover:text-emerald-400 transition">Services</a>
+        <a href="#industries" class="hover:text-emerald-400 transition">Industries</a>
+        <a href="#process" class="hover:text-emerald-400 transition">Process</a>
+        <a href="#why" class="hover:text-emerald-400 transition">Why Us</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+      </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+              class="bg-white text-zinc-900 px-6 py-2.5 rounded-full font-medium hover:bg-emerald-400 hover:text-white transition">
+        Request a Quote
+      </button>
+    </div>
+  </nav>
 
-    <!-- Hero -->
-    <header class="bg-gradient-to-br from-[#0A2540] to-[#1E3A8A] text-white py-28">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <img src="https://i.imgur.com/YOUR-LOGO-LINK.png" alt="GNAB Logo" class="mx-auto h-40 mb-8">
-            <h1 class="text-6xl font-bold mb-6">GNAB Business Solutions</h1>
-            <p class="text-3xl mb-10">Your Trusted Procurement & Supply Partner Across Ghana</p>
-            <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white text-2xl font-semibold px-12 py-6 rounded-xl transition">Request a Quote</a>
+  <!-- HERO -->
+  <section id="home" class="hero-bg min-h-screen flex items-center">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-emerald-400 text-sm tracking-[3px] mb-4">ONE PARTNER. ENDLESS SOLUTIONS.</p>
+      <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+        Your Trusted <span class="text-emerald-400">Procurement</span><br>& Supply Partner
+      </h1>
+      <p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-10">
+        GNAB Business Solutions helps businesses, government institutions, NGOs, schools, hospitals and corporate organizations simplify procurement.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-emerald-600 hover:bg-emerald-500 px-10 py-4 rounded-2xl font-semibold text-lg transition">
+          Request a Quote →
+        </button>
+        <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" 
+                class="border border-white/60 hover:bg-white/10 px-10 py-4 rounded-2xl font-semibold text-lg transition">
+          Explore Services
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="bg-white py-6 text-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-medium">
+      <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-emerald-500"></i> Reliable Procurement</div>
+      <div class="flex items-center gap-2"><i class="fas fa-tags text-emerald-500"></i> Competitive Pricing</div>
+      <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Quality Assurance</div>
+      <div class="flex items-center gap-2"><i class="fas fa-truck text-emerald-500"></i> Timely Delivery</div>
+      <div class="flex items-center gap-2"><i class="fas fa-users text-emerald-500"></i> Trusted Network</div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-white text-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-emerald-600 font-medium">WHO WE ARE</span>
+          <h2 class="text-5xl font-bold mt-3 leading-tight">A procurement partner built for how modern organizations work.</h2>
+          <p class="mt-8 text-lg text-zinc-600">
+            GNAB Business Solutions is a trusted procurement and supply partner providing organizations with a single point of contact for sourcing, purchasing and delivering quality products across multiple industries.
+          </p>
+          <ul class="mt-10 space-y-4">
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Single point of contact for all procurement categories</li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Vetted network of local and international suppliers</li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Transparent pricing and disciplined delivery</li>
+          </ul>
         </div>
-    </header>
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team" class="rounded-3xl shadow-2xl">
+      </div>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="py-20 bg-white dark:bg-gray-900">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">About Us</h2>
-            <p class="text-xl max-w-4xl mx-auto">
-                We are a dynamic Ghanaian procurement and supply company committed to delivering quality products and exceptional service nationwide.
-            </p>
+  <!-- Services -->
+  <section id="services" class="py-24 bg-zinc-100 text-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-emerald-600 font-medium">WHAT WE OFFER</span>
+        <h2 class="text-5xl font-bold mt-3">Procurement, simplified end-to-end.</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">📄</div>
+          <h3 class="text-2xl font-semibold mb-3">Office Stationery</h3>
+          <p class="text-zinc-600">Everyday office essentials sourced consistently at the right price and delivered on schedule.</p>
         </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-20 bg-gray-100 dark:bg-gray-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Services cards same as before -->
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">Office Stationery & Consumables</div>
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">IT Equipment & Supplies</div>
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">Cleaning & Janitorial Supplies</div>
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">PPE & Safety Equipment</div>
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">Office Furniture</div>
-                <div class="bg-white dark:bg-gray-700 p-8 rounded-3xl card-hover">Printing & Branding Solutions</div>
-            </div>
+        
+        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">💻</div>
+          <h3 class="text-2xl font-semibold mb-3">IT Equipment</h3>
+          <p class="text-zinc-600">Laptops, desktops, printers, networking and peripherals from trusted OEMs.</p>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-20 bg-white dark:bg-gray-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Client Testimonials</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl">"Reliable and professional service. Highly recommended!"</div>
-                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl">"Fast delivery and excellent pricing. They are now our go-to supplier."</div>
-                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-3xl">"Great support and quality products. A true business partner."</div>
-            </div>
+        
+        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">🧹</div>
+          <h3 class="text-2xl font-semibold mb-3">Cleaning Supplies</h3>
+          <p class="text-zinc-600">Institutional-grade cleaning, sanitation and hygiene supplies.</p>
         </div>
-    </section>
+        
+        <!-- Add more service cards if needed in next part -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Get In Touch</h2>
-            <p class="text-center text-lg mb-12">We serve clients nationwide from Takoradi with seamless delivery across Ghana.</p>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <p><i class="fas fa-envelope text-green-600"></i> <strong>Email:</strong> gnabsolutions@gmail.com</p>
-                        <p><i class="fas fa-phone text-green-600"></i> <strong>Phone:</strong> +233 55 427 3445</p>
-                        <p><i class="fab fa-whatsapp text-green-600"></i> <strong>WhatsApp:</strong> +233 27 547 3098</p>
-                    </div>
-                </div>
-
-                <!-- Quote Form -->
-                <form action="https://formspree.io/f/YOUR-CODE-HERE" method="POST" class="space-y-6">
-                    <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
-                    <input type="email" name="email" placeholder="Email Address" required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
-                    <input type="tel" name="phone" placeholder="Phone Number" class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
-                    <textarea name="message" rows="5" placeholder="Tell us what you need..." required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4"></textarea>
-                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 rounded-2xl">Send Message</button>
-                </form>
-            </div>
+  <!-- Industries -->
+  <section id="industries" class="py-24 bg-white text-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-emerald-600 font-medium">INDUSTRIES WE SERVE</span>
+        <h2 class="text-5xl font-bold mt-3">Trusted across sectors that matter.</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🏢</div>
+          <h3 class="font-semibold">Corporate</h3>
         </div>
-    </section>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🏛️</div>
+          <h3 class="font-semibold">Government</h3>
+        </div>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="font-semibold">Education</h3>
+        </div>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🏥</div>
+          <h3 class="font-semibold">Healthcare</h3>
+        </div>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🏨</div>
+          <h3 class="font-semibold">Hospitality</h3>
+        </div>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🏗️</div>
+          <h3 class="font-semibold">Construction</h3>
+        </div>
+        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="font-semibold">NGOs</h3>
+        </div>
+        <div class="bg-emerald-600 p-8 rounded-3xl text-center text-white">
+          <div class="text-4xl mb-4">🛍️</div>
+          <h3 class="font-semibold">SMEs</h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="bg-[#0A2540] text-white py-12 text-center">
-        <p class="text-2xl font-bold">GNAB Business Solutions</p>
-        <p class="mt-2">Serving Ghana Nationwide</p>
-        <p class="mt-8 text-sm">© 2026 All Rights Reserved</p>
-    </footer>
+  <!-- Why Choose Us -->
+  <section id="why" class="py-24 bg-zinc-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-emerald-400 font-medium">WHY CHOOSE GNAB</span>
+        <h2 class="text-5xl font-bold mt-3">The measurable difference of a real procurement partner.</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-zinc-800 p-8 rounded-3xl">
+          <h3 class="font-semibold text-xl mb-4">Reliable Supplier Network</h3>
+          <p class="text-zinc-400">A pre-vetted network of trusted local and international suppliers we source from every day.</p>
+        </div>
+        <div class="bg-zinc-800 p-8 rounded-3xl">
+          <h3 class="font-semibold text-xl mb-4">Fast Delivery</h3>
+          <p class="text-zinc-400">Disciplined logistics and last-mile execution — on time, every time, across Ghana.</p>
+        </div>
+        <div class="bg-zinc-800 p-8 rounded-3xl">
+          <h3 class="font-semibold text-xl mb-4">Competitive Pricing</h3>
+          <p class="text-zinc-400">Scale, negotiation and category expertise translated into measurable savings on every order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function toggleDarkMode() {
-            document.documentElement.classList.toggle('dark');
-            const icon = document.getElementById('theme-icon');
-            icon.classList.toggle('fa-moon');
-            icon.classList.toggle('fa-sun');
-        }
-    </script>
+  <!-- Placeholder for Contact and Footer -->
 </body>
 </html>
