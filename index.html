@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNAB Business Solutions | Procurement & Supply Ghana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .accordion-content { display: none; }
+        .accordion-active .accordion-content { display: block; }
+        .hero-bg { background: linear-gradient(rgba(10,37,64,0.85), rgba(30,58,138,0.85)), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d') center/cover no-repeat; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://imgur.com/FTPqfBS" alt="GNAB Logo" class="h-12">
+                <span class="font-bold text-2xl text-[#0A2540] dark:text-white">GNAB</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <button onclick="toggleDarkMode()" class="p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <i id="theme-icon" class="fas fa-moon text-xl"></i>
+                </button>
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">Request Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg text-white py-32 text-center">
+        <img src="https://imgur.com/FTPqfBS" alt="GNAB Logo" class="mx-auto h-40 mb-8">
+        <h1 class="text-6xl font-bold mb-4">GNAB Business Solutions</h1>
+        <p class="text-3xl">Your Trusted Procurement & Supply Partner Across Ghana</p>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-16">
+
+        <!-- About Us -->
+        <section id="about" class="mb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                        <span>About Us</span>
+                        <i class="fas fa-chevron-down ml-auto"></i>
+                    </h2>
+                    <div class="accordion-content pl-4 border-l-4 border-green-600 space-y-6 text-lg">
+                        <p>GNAB Business Solutions is a Ghanaian procurement and supply company committed to helping businesses, institutions, and organizations simplify their purchasing processes through reliable sourcing, competitive pricing, and timely delivery.</p>
+                        <p>We serve as a one-stop procurement partner for corporate organizations, educational institutions, healthcare facilities, hospitality businesses, NGOs, government agencies, and SMEs.</p>
+                        
+                        <div class="mt-8">
+                            <h3 class="font-semibold text-xl mb-3">Our Vision</h3>
+                            <p>To become one of Ghana's most trusted and preferred procurement and supply partners, recognized for reliability, professionalism, innovation, and customer satisfaction.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-xl mb-3">Our Mission</h3>
+                            <p>To provide efficient procurement and supply solutions that enable our clients to focus on their core business while we handle their sourcing, purchasing, and delivery needs with excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Team Collaboration" class="rounded-3xl shadow-2xl">
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                <span>Our Core Values</span>
+                <i class="fas fa-chevron-down ml-auto"></i>
+            </h2>
+            <div class="accordion-content pl-4 grid md:grid-cols-2 gap-x-12 gap-y-4 text-lg">
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Integrity</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Professionalism</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Reliability</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Accountability</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Customer Focus</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Excellence</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Innovation</div>
+                <div class="flex gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Timely Delivery</div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="mb-20">
+            <h2 class="text-4xl font-bold mb-8 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                <span>Our Services</span>
+                <i class="fas fa-chevron-down ml-auto"></i>
+            </h2>
+            <div class="accordion-content pl-4 space-y-8 text-lg">
+                <div><strong>Office Stationery & Consumables:</strong> Printing paper, pens and pencils, files and folders, diaries and notebooks, toners and ink cartridges, office supplies.</div>
+                <div><strong>Information Technology (IT) Supplies:</strong> Laptops and desktop computers, printers and scanners, networking equipment, computer accessories, UPS systems, external storage devices.</div>
+                <div><strong>Cleaning & Janitorial Supplies:</strong> Cleaning chemicals, tissue products, waste bins, mops and buckets, cleaning equipment, disposable supplies.</div>
+                <div><strong>Personal Protective Equipment (PPE):</strong> Safety helmets, reflective jackets, safety boots, protective gloves, face masks, safety goggles.</div>
+                <div><strong>Office Furniture:</strong> Executive desks, office chairs, cabinets, shelving systems, conference tables, reception furniture.</div>
+                <div><strong>Printing & Branding:</strong> Business cards, letterheads, company profiles, banners, promotional materials, corporate gifts.</div>
+                <div><strong>General Procurement:</strong> We also source products outside our regular catalogue. <strong>If you need it, we'll source it.</strong></div>
+            </div>
+        </section>
+
+        <!-- Industries & Process -->
+        <section class="mb-20 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                    <span>Industries We Serve</span>
+                    <i class="fas fa-chevron-down ml-auto"></i>
+                </h2>
+                <div class="accordion-content pl-4 grid gap-2 text-lg">
+                    <div>Corporate Organisations • Government Institutions • Educational Institutions</div>
+                    <div>Healthcare Facilities • Construction Companies • Hotels & Hospitality</div>
+                    <div>NGOs & Development Partners • Financial Institutions • Manufacturing Companies</div>
+                    <div>Retail Businesses • Religious Organisations • SMEs</div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 cursor-pointer" onclick="toggleAccordion(this)">
+                    <span>Our Procurement Process</span>
+                    <i class="fas fa-chevron-down ml-auto"></i>
+                </h2>
+                <div class="accordion-content pl-4">
+                    <ol class="list-decimal space-y-3 text-lg">
+                        <li>Receive client request</li>
+                        <li>Source products from qualified suppliers</li>
+                        <li>Compare pricing and quality</li>
+                        <li>Prepare quotation</li>
+                        <li>Client approval</li>
+                        <li>Purchase and quality inspection</li>
+                        <li>Delivery</li>
+                        <li>After-sales support</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="bg-white dark:bg-gray-800 rounded-3xl p-10 shadow-xl">
+            <h2 class="text-4xl font-bold text-center mb-8">Get In Touch</h2>
+            <p class="text-center text-lg mb-10">We serve clients nationwide with reliable delivery across Ghana.</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8 text-lg">
+                    <p><i class="fas fa-envelope text-green-600"></i> <strong>gnabsolutions@gmail.com</strong></p>
+                    <p><i class="fas fa-phone text-green-600"></i> <strong>+233 55 427 3445</strong></p>
+                    <p><i class="fab fa-whatsapp text-green-600"></i> <strong>+233 27 547 3098</strong></p>
+                </div>
+
+                <form action="https://formspree.io/f/meeyrwdk" method="POST" class="space-y-6">
+                    <input type="text" name="name" placeholder="Your Full Name" required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
+                    <input type="email" name="email" placeholder="Email Address" required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
+                    <input type="tel" name="phone" placeholder="Phone Number" class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4">
+                    <textarea name="message" rows="6" placeholder="Describe what you need..." required class="w-full border border-gray-300 dark:border-gray-600 rounded-2xl px-6 py-4"></textarea>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 rounded-2xl text-xl">Send Request</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-[#0A2540] text-white py-12 text-center">
+        <p class="text-2xl font-bold">GNAB Business Solutions</p>
+        <p class="mt-2">"One Partner. Endless Solutions."</p>
+        <p class="mt-8 text-sm">Serving Ghana Nationwide • © 2026</p>
+    </footer>
+
+    <script>
+        function toggleAccordion(el) {
+            el.parentElement.classList.toggle('accordion-active');
+        }
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('theme-icon');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        }
+    </script>
+</body>
+</html>
