@@ -1,254 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNAB Business Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; }
-        .hero-bg { 
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-                        url('https://i.imgur.com/FTPqfBS.png') center/cover no-repeat; 
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GNAB Business Solutions — Your Trusted Procurement & Supply Partner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
 </head>
-<body class="bg-zinc-950 text-white">
+<body class="bg-white text-zinc-900">
 
-  <!-- Navigation -->
-  <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-zinc-950/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="https://i.imgur.com/FTPqfBS.png" alt="GNAB" class="h-10">
-        <div>
-          <span class="font-semibold text-xl tracking-tight">GNAB</span>
-          <p class="text-[10px] text-emerald-400 tracking-widest">ONE PARTNER. ENDLESS SOLUTIONS.</p>
+        <img src="https://imgur.com/FTPqfBS.png" alt="GNAB" class="h-10" />
+        <div class="hidden sm:block">
+          <p class="text-white font-semibold text-lg leading-none">GNAB</p>
+          <p class="text-[10px] text-emerald-400 tracking-widest uppercase">One Partner. Endless Solutions.</p>
         </div>
       </div>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#home" class="hover:text-emerald-400 transition">Home</a>
-        <a href="#about" class="hover:text-emerald-400 transition">About</a>
-        <a href="#services" class="hover:text-emerald-400 transition">Services</a>
-        <a href="#industries" class="hover:text-emerald-400 transition">Industries</a>
-        <a href="#process" class="hover:text-emerald-400 transition">Process</a>
-        <a href="#why" class="hover:text-emerald-400 transition">Why Us</a>
-        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/80">
+        <a href="#home" class="hover:text-white">Home</a>
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#industries" class="hover:text-white">Industries</a>
+        <a href="#process" class="hover:text-white">Process</a>
+        <a href="#why" class="hover:text-white">Why Us</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
       </div>
-      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
-              class="bg-white text-zinc-900 px-6 py-2.5 rounded-full font-medium hover:bg-emerald-400 hover:text-white transition">
+      <a href="#contact" class="hidden sm:inline-flex bg-white text-zinc-900 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-500 hover:text-white transition">
         Request a Quote
-      </button>
+      </a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section id="home" class="hero-bg min-h-screen flex items-center">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <p class="text-emerald-400 text-sm tracking-[3px] mb-4">ONE PARTNER. ENDLESS SOLUTIONS.</p>
-      <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
-        Your Trusted <span class="text-emerald-400">Procurement</span><br>& Supply Partner
+  <section id="home" class="relative min-h-screen flex items-center bg-zinc-950 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1586528116311-2e2c3d4e3b2c?auto=format&fit=crop&w=1920&q=80" alt="" class="w-full h-full object-cover opacity-40" />
+      <div class="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950/60"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-6 py-32 w-full">
+      <p class="text-emerald-400 text-xs font-bold tracking-[0.25em] uppercase mb-4">One Partner. Endless Solutions.</p>
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
+        Your Trusted <span class="text-yellow-400">Procurement</span> &amp; <span class="text-emerald-400">Supply</span> Partner
       </h1>
-      <p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-10">
-        GNAB Business Solutions helps businesses, government institutions, NGOs, schools, hospitals and corporate organizations simplify procurement.
+      <p class="mt-8 text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
+        GNAB Business Solutions helps businesses, government institutions, NGOs, schools, hospitals and corporate organizations simplify procurement through reliable sourcing, competitive pricing and timely delivery.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
-                class="bg-emerald-600 hover:bg-emerald-500 px-10 py-4 rounded-2xl font-semibold text-lg transition">
-          Request a Quote →
-        </button>
-        <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" 
-                class="border border-white/60 hover:bg-white/10 px-10 py-4 rounded-2xl font-semibold text-lg transition">
-          Explore Services
-        </button>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition">Request a Quote →</a>
+        <a href="#services" class="border border-white/50 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition">Explore Services</a>
       </div>
     </div>
   </section>
 
-  <!-- Trust Bar -->
-  <div class="bg-white py-6 text-zinc-800">
-    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm font-medium">
-      <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-emerald-500"></i> Reliable Procurement</div>
-      <div class="flex items-center gap-2"><i class="fas fa-tags text-emerald-500"></i> Competitive Pricing</div>
-      <div class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500"></i> Quality Assurance</div>
-      <div class="flex items-center gap-2"><i class="fas fa-truck text-emerald-500"></i> Timely Delivery</div>
-      <div class="flex items-center gap-2"><i class="fas fa-users text-emerald-500"></i> Trusted Network</div>
+  <!-- TRUST BAR -->
+  <div class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-5 gap-6 text-sm font-semibold text-zinc-800">
+      <div class="flex items-center gap-3"><i class="fas fa-shield-alt text-emerald-500 text-xl"></i> Reliable Procurement</div>
+      <div class="flex items-center gap-3"><i class="fas fa-tags text-emerald-500 text-xl"></i> Competitive Pricing</div>
+      <div class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-500 text-xl"></i> Quality Assurance</div>
+      <div class="flex items-center gap-3"><i class="fas fa-truck text-emerald-500 text-xl"></i> Timely Delivery</div>
+      <div class="flex items-center gap-3"><i class="fas fa-users text-emerald-500 text-xl"></i> Trusted Network</div>
     </div>
   </div>
 
-  <!-- About Section -->
-  <section id="about" class="py-24 bg-white text-zinc-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <span class="text-emerald-600 font-medium">WHO WE ARE</span>
-          <h2 class="text-5xl font-bold mt-3 leading-tight">A procurement partner built for how modern organizations work.</h2>
-          <p class="mt-8 text-lg text-zinc-600">
-            GNAB Business Solutions is a trusted procurement and supply partner providing organizations with a single point of contact for sourcing, purchasing and delivering quality products across multiple industries.
-          </p>
-          <ul class="mt-10 space-y-4">
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Single point of contact for all procurement categories</li>
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Vetted network of local and international suppliers</li>
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i> Transparent pricing and disciplined delivery</li>
-          </ul>
-        </div>
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team" class="rounded-3xl shadow-2xl">
+    <!-- ABOUT -->
+  <section id="about" class="py-24 bg-zinc-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" 
+             alt="Team" class="rounded-3xl shadow-2xl w-full h-[480px] object-cover" />
+      </div>
+      <div>
+        <p class="text-emerald-600 text-xs font-bold tracking-[0.2em] uppercase">Who We Are</p>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold text-zinc-900 leading-tight">
+          A procurement partner built for how modern organizations work.
+        </h2>
+        <p class="mt-6 text-lg text-zinc-600 leading-relaxed">
+          GNAB Business Solutions is a trusted procurement and supply partner providing organizations with a single point of contact for sourcing, purchasing and delivering quality products across multiple industries.
+        </p>
+        <ul class="mt-8 space-y-3">
+          <li class="flex gap-3 items-start"><i class="fas fa-check text-emerald-500 mt-1"></i> Single point of contact for all procurement categories</li>
+          <li class="flex gap-3 items-start"><i class="fas fa-check text-emerald-500 mt-1"></i> Vetted network of local and international suppliers</li>
+          <li class="flex gap-3 items-start"><i class="fas fa-check text-emerald-500 mt-1"></i> Transparent pricing and disciplined delivery</li>
+        </ul>
+        <a href="#contact" class="inline-block mt-10 bg-zinc-900 hover:bg-emerald-600 text-white px-8 py-4 rounded-2xl font-semibold transition">
+          Learn More →
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-24 bg-zinc-100 text-zinc-900">
+  <!-- SERVICES -->
+  <section id="services" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <span class="text-emerald-600 font-medium">WHAT WE OFFER</span>
-        <h2 class="text-5xl font-bold mt-3">Procurement, simplified end-to-end.</h2>
+      <div class="max-w-2xl">
+        <p class="text-emerald-600 text-xs font-bold tracking-[0.2em] uppercase">Our Services</p>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold text-zinc-900">Procurement, simplified end-to-end.</h2>
+        <p class="mt-4 text-lg text-zinc-600">From everyday essentials to specialised supply — one trusted partner for every procurement category your organisation needs.</p>
       </div>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
-          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">📄</div>
-          <h3 class="text-2xl font-semibold mb-3">Office Stationery</h3>
-          <p class="text-zinc-600">Everyday office essentials sourced consistently at the right price and delivered on schedule.</p>
+
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service cards -->
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">📄</div>
+          <h3 class="text-xl font-bold text-zinc-900">Office Stationery</h3>
+          <p class="mt-3 text-zinc-600">Everyday office essentials sourced consistently at the right price and delivered on schedule.</p>
         </div>
-        
-        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
-          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">💻</div>
-          <h3 class="text-2xl font-semibold mb-3">IT Equipment</h3>
-          <p class="text-zinc-600">Laptops, desktops, printers, networking and peripherals from trusted OEMs.</p>
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">💻</div>
+          <h3 class="text-xl font-bold text-zinc-900">IT Equipment</h3>
+          <p class="mt-3 text-zinc-600">Laptops, desktops, printers, networking and peripherals from trusted OEMs and distributors.</p>
         </div>
-        
-        <div class="bg-white p-8 rounded-3xl hover:shadow-xl transition">
-          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">🧹</div>
-          <h3 class="text-2xl font-semibold mb-3">Cleaning Supplies</h3>
-          <p class="text-zinc-600">Institutional-grade cleaning, sanitation and hygiene supplies.</p>
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">🧹</div>
+          <h3 class="text-xl font-bold text-zinc-900">Cleaning Supplies</h3>
+          <p class="mt-3 text-zinc-600">Institutional-grade cleaning, sanitation and hygiene supplies for offices and facilities.</p>
         </div>
-        
-        <!-- Add more service cards if needed in next part -->
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">⛑️</div>
+          <h3 class="text-xl font-bold text-zinc-900">Personal Protective Equipment</h3>
+          <p class="mt-3 text-zinc-600">Certified PPE for healthcare, industrial, construction and field-work environments.</p>
+        </div>
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">🪑</div>
+          <h3 class="text-xl font-bold text-zinc-900">Office Furniture</h3>
+          <p class="mt-3 text-zinc-600">Ergonomic office furniture, workstations, executive suites and reception fit-outs.</p>
+        </div>
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">🖨️</div>
+          <h3 class="text-xl font-bold text-zinc-900">Printing & Branding</h3>
+          <p class="mt-3 text-zinc-600">Corporate print, signage, branded merchandise and marketing collateral production.</p>
+        </div>
+        <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition md:col-span-2 lg:col-span-1">
+          <div class="w-14 h-14 bg-zinc-100 rounded-2xl flex items-center justify-center text-2xl mb-6">📦</div>
+          <h3 class="text-xl font-bold text-zinc-900">Custom Procurement</h3>
+          <p class="mt-3 text-zinc-600">Whatever you need — we source it. One trusted partner for endless procurement needs.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Industries -->
-  <section id="industries" class="py-24 bg-white text-zinc-900">
+    <!-- INDUSTRIES -->
+  <section id="industries" class="py-24 bg-zinc-50">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <span class="text-emerald-600 font-medium">INDUSTRIES WE SERVE</span>
-        <h2 class="text-5xl font-bold mt-3">Trusted across sectors that matter.</h2>
+      <div class="max-w-2xl">
+        <p class="text-emerald-600 text-xs font-bold tracking-[0.2em] uppercase">Industries We Serve</p>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold text-zinc-900">Trusted across sectors that matter.</h2>
+        <p class="mt-4 text-lg text-zinc-600">From ministries to SMEs, our procurement expertise is tailored to the realities of each industry we serve.</p>
       </div>
-      
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🏢</div>
-          <h3 class="font-semibold">Corporate</h3>
+          <p class="font-semibold">Corporate</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🏛️</div>
-          <h3 class="font-semibold">Government</h3>
+          <p class="font-semibold">Government</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🎓</div>
-          <h3 class="font-semibold">Education</h3>
+          <p class="font-semibold">Education</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🏥</div>
-          <h3 class="font-semibold">Healthcare</h3>
+          <p class="font-semibold">Healthcare</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🏨</div>
-          <h3 class="font-semibold">Hospitality</h3>
+          <p class="font-semibold">Hospitality</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🏗️</div>
-          <h3 class="font-semibold">Construction</h3>
+          <p class="font-semibold">Construction</p>
         </div>
-        <div class="bg-zinc-100 p-8 rounded-3xl text-center hover:bg-emerald-50 transition">
+        <div class="bg-white rounded-2xl p-8 text-center border hover:border-emerald-500 hover:shadow-lg transition">
           <div class="text-4xl mb-4">🤝</div>
-          <h3 class="font-semibold">NGOs</h3>
+          <p class="font-semibold">NGOs</p>
         </div>
-        <div class="bg-emerald-600 p-8 rounded-3xl text-center text-white">
+        <div class="bg-emerald-600 text-white rounded-2xl p-8 text-center shadow-lg">
           <div class="text-4xl mb-4">🛍️</div>
-          <h3 class="font-semibold">SMEs</h3>
+          <p class="font-semibold">SMEs</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="why" class="py-24 bg-zinc-900 text-white">
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <span class="text-emerald-400 font-medium">WHY CHOOSE GNAB</span>
-        <h2 class="text-5xl font-bold mt-3">The measurable difference of a real procurement partner.</h2>
+      <div class="max-w-2xl">
+        <p class="text-emerald-600 text-xs font-bold tracking-[0.2em] uppercase">Why Choose GNAB</p>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold text-zinc-900">The measurable difference of a real procurement partner.</h2>
+        <p class="mt-4 text-lg text-zinc-600">Deep category expertise meets disciplined execution — delivering savings, speed and complete peace of mind on every order.</p>
       </div>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <h3 class="font-semibold text-xl mb-4">Reliable Supplier Network</h3>
-          <p class="text-zinc-400">A pre-vetted network of trusted local and international suppliers we source from every day.</p>
+
+      <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">🔗</div>
+          <h3 class="text-lg font-bold">Reliable Supplier Network</h3>
+          <p class="mt-3 text-zinc-600 text-sm">A pre-vetted network of trusted local and international suppliers we source from every day.</p>
         </div>
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <h3 class="font-semibold text-xl mb-4">Fast Delivery</h3>
-          <p class="text-zinc-400">Disciplined logistics and last-mile execution — on time, every time, across Ghana.</p>
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">🚚</div>
+          <h3 class="text-lg font-bold">Fast Delivery</h3>
+          <p class="mt-3 text-zinc-600 text-sm">Disciplined logistics and last-mile execution — on time, every time, across Ghana.</p>
         </div>
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <h3 class="font-semibold text-xl mb-4">Competitive Pricing</h3>
-          <p class="text-zinc-400">Scale, negotiation and category expertise translated into measurable savings on every order.</p>
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">💰</div>
+          <h3 class="text-lg font-bold">Competitive Pricing</h3>
+          <p class="mt-3 text-zinc-600 text-sm">Scale, negotiation and category expertise translated into measurable savings on every order.</p>
+        </div>
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">🎧</div>
+          <h3 class="text-lg font-bold">Professional Support</h3>
+          <p class="mt-3 text-zinc-600 text-sm">A dedicated account team that knows your business, your specs and your timelines.</p>
+        </div>
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">✅</div>
+          <h3 class="text-lg font-bold">Quality Assurance</h3>
+          <p class="mt-3 text-zinc-600 text-sm">Every product is inspected against specification before it reaches your team or facility.</p>
+        </div>
+        <div class="bg-zinc-50 rounded-3xl p-8 border">
+          <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-xl flex items-center justify-center text-xl mb-5">⚙️</div>
+          <h3 class="text-lg font-bold">Tailored Procurement Solutions</h3>
+          <p class="mt-3 text-zinc-600 text-sm">Bespoke procurement programs designed around your workflow, budget and compliance needs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 bg-emerald-600 text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-6">Ready to Simplify Your Procurement?</h2>
-      <p class="text-xl mb-12">Talk to our procurement specialists today and receive a no-obligation quotation within 24 hours.</p>
-      
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button onclick="window.location.href='mailto:gnabsolutions@gmail.com'" 
-                class="bg-white text-emerald-600 px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-zinc-100 transition">
-          Request a Quote
-        </button>
-        <button onclick="window.location.href='https://wa.me/233275473098'" 
-                class="border-2 border-white px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 transition">
-          Chat on WhatsApp
-        </button>
-      </div>
-
-      <div class="mt-16 grid md:grid-cols-3 gap-8 text-left">
-        <div>
-          <p class="font-medium">Email</p>
-          <p class="text-emerald-100">gnabsolutions@gmail.com</p>
-        </div>
-        <div>
-          <p class="font-medium">Phone</p>
-          <p class="text-emerald-100">+233 55 427 3445</p>
-        </div>
-        <div>
-          <p class="font-medium">WhatsApp</p>
-          <p class="text-emerald-100">+233 27 547 3098</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-zinc-950 py-16 border-t border-zinc-800">
+  <!-- PROCESS -->
+  <section id="process" class="py-24 bg-zinc-950 text-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="max-w-2xl">
+        <p class="text-yellow-400 text-xs font-bold tracking-[0.2em] uppercase">Our Procurement Process</p>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold">Six deliberate steps. Zero surprises.</h2>
+        <p class="mt-4 text-lg text-white/70">A transparent, structured methodology honed across hundreds of successful engagements.</p>
+      </div>
+
+      <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">1</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 01</p>
+          <h3 class="mt-2 font-bold text-lg">Receive Request</h3>
+          <p class="mt-2 text-sm text-white/70">You send us your specifications, quantities and required delivery timelines.</p>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">2</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 02</p>
+          <h3 class="mt-2 font-bold text-lg">Source Products</h3>
+          <p class="mt-2 text-sm text-white/70">We identify qualified suppliers from our vetted network and secure competitive offers.</p>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">3</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 03</p>
+          <h3 class="mt-2 font-bold text-lg">Prepare Quotation</h3>
+          <p class="mt-2 text-sm text-white/70">A clear, itemised quotation is delivered within 24 hours for your review.</p>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">4</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 04</p>
+          <h3 class="mt-2 font-bold text-lg">Client Approval</h3>
+          <p class="mt-2 text-sm text-white/70">You approve pricing, terms and delivery schedule before any commitment is made.</p>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">5</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 05</p>
+          <h3 class="mt-2 font-bold text-lg">Delivery</h3>
+          <p class="mt-2 text-sm text-white/70">Goods are quality-checked, packed and delivered directly to your site on schedule.</p>
+        </div>
+        <div class="text-center lg:text-left">
+          <div class="w-14 h-14 mx-auto lg:mx-0 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-yellow-400 text-xl mb-4">6</div>
+          <p class="text-yellow-400 text-xs font-bold tracking-widest">STEP 06</p>
+          <h3 class="mt-2 font-bold text-lg">After-Sales Support</h3>
+          <p class="mt-2 text-sm text-white/70">Ongoing support, warranty coordination and continuous improvement of your supply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTA -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-zinc-950 rounded-3xl p-12 md:p-20 text-center text-white relative overflow-hidden">
+        <p class="text-yellow-400 text-xs font-bold tracking-[0.25em] uppercase">Ready when you are</p>
+        <h2 class="mt-4 text-4xl md:text-5xl font-bold">Ready to Simplify Your Procurement?</h2>
+        <p class="mt-6 text-lg text-white/75 max-w-2xl mx-auto">
+          Talk to our procurement specialists today and receive a no-obligation quotation within 24 hours.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4 justify-center">
+          <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-2xl font-semibold transition">Request a Quote →</a>
+          <a href="#contact" class="border border-white/40 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-semibold transition">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-zinc-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Form -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border">
+          <h2 class="text-3xl font-bold text-zinc-900">Tell us what you need.</h2>
+          <p class="mt-3 text-zinc-600">Our team will respond within one business day.</p>
+
+          <form action="https://formspree.io/f/meeyrwdk" method="POST" class="mt-8 space-y-5">
+            <input type="hidden" name="_subject" value="New enquiry — GNAB Business Solutions" />
+            <div class="grid md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold mb-1.5">Name *</label>
+                <input type="text" name="name" required class="w-full rounded-xl border px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold mb-1.5">Email *</label>
+                <input type="email" name="email" required class="w-full rounded-xl border px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1.5">Phone</label>
+              <input type="tel" name="phone" class="w-full rounded-xl border px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1.5">Message *</label>
+              <textarea name="message" rows="5" required class="w-full rounded-xl border px-4 py-3 text-sm focus:outline-none focus:border-emerald-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 rounded-2xl transition">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl p-6 border flex gap-4 items-start">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl">📞</div>
+            <div>
+              <p class="text-xs uppercase tracking-widest font-bold text-zinc-500">Call Us</p>
+              <p class="font-bold text-lg">+233 55 427 3445</p>
+              <p class="text-sm text-zinc-500">Mon–Fri, 8:00–17:00</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border flex gap-4 items-start">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl">✉️</div>
+            <div>
+              <p class="text-xs uppercase tracking-widest font-bold text-zinc-500">Email</p>
+              <p class="font-bold text-lg break-all">gnabsolutions@gmail.com</p>
+              <p class="text-sm text-zinc-500">We reply within one business day</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/233275473098" target="_blank" class="block bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-6 text-white">
+            <p class="text-xs uppercase tracking-widest font-bold text-white/80">Instant Chat</p>
+            <p class="font-bold text-xl mt-1">Chat with us on WhatsApp</p>
+            <p class="text-sm text-white/90">+233 27 547 3098</p>
+          </a>
+
+          <div class="bg-white rounded-2xl p-6 border">
+            <p class="text-xs uppercase tracking-widest font-bold text-zinc-500">Head Office</p>
+            <p class="font-bold mt-1">Accra Business District</p>
+            <p class="text-sm text-zinc-500">Greater Accra, Ghana</p>
+            <p class="text-sm text-zinc-500 mt-1">Serving clients nationwide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zinc-950 text-white/80 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
         <div>
-          <img src="https://imgur.com/FTPqfBS" alt="GNAB" class="h-10 mb-4">
-          <p class="text-zinc-400">Ghana's trusted partner for corporate procurement, sourcing and supply.</p>
+          <img src="https://imgur.com/FTPqfBS.png" alt="GNAB" class="h-10 mb-6" />
+          <p class="text-white/70 max-w-md">
+            Ghana’s trusted partner for corporate procurement, sourcing and supply — delivering measurable value to businesses, government, NGOs and institutions.
+          </p>
+          <p class="mt-6 text-xs uppercase tracking-[0.25em] font-bold text-yellow-400">
+            One Partner. Endless Solutions.
+          </p>
         </div>
-        
-        <div class="text-center md:text-right">
-          <p class="text-emerald-400 font-medium">ONE PARTNER. ENDLESS SOLUTIONS.</p>
-          <p class="text-zinc-500 text-sm mt-8">© 2026 GNAB Business Solutions. All Rights Reserved.</p>
+        <div class="text-sm space-y-3 md:text-right">
+          <p><strong class="text-white">Email:</strong> gnabsolutions@gmail.com</p>
+          <p><strong class="text-white">Phone:</strong> +233 55 427 3445</p>
+          <p><strong class="text-white">WhatsApp:</strong> +233 27 547 3098</p>
         </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/50">
+        <p>© 2026 GNAB Business Solutions. All rights reserved.</p>
+        <p class="uppercase tracking-widest font-semibold text-yellow-400">Registered in Ghana</p>
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/233275473098" target="_blank" 
+     class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full px-5 py-3 font-semibold shadow-xl flex items-center gap-2 transition">
+    <i class="fab fa-whatsapp text-xl"></i>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
 
 </body>
 </html>
